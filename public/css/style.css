@@ -1,0 +1,541 @@
+:root {
+    --green-light: #a8d5a3;
+    --green-medium-light: #7ed67e;
+    --green-medium: #4caf50;
+    --green-medium-dark: #388e3c;
+    --green-dark: #2e7d32;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    background-color: #f4f4f4; /* Un fondo sutil para contraste */
+    color: #333; /* Color de texto principal más legible */
+    transition: background-color 0.3s ease; /* Transición suave para interacciones */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--green-medium-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px; /* Un poco más de espacio */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para levantar la barra */
+    border-bottom: 4px solid var(--green-dark);
+}
+
+.logo-right {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineado a la izquierda para el logo derecho */
+    gap: 4px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo-right a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-name-right {
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo-right a i {
+    font-size: 32px; /* Aumentar tamaño del icono */
+}
+
+/* Logo */
+.logo {
+    color: var(--green-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Cambiado a derecha */
+    gap: 4px;
+    position: relative;
+}
+
+.logo-subtext {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000; /* Cambiado a negro */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-underline {
+    width: 100%;
+    height: 2px;
+    background-color: #000000; /* Cambiado a negro */
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
+/* Botones del menú */
+.button {
+    background-color: white; /* Cambiado a blanco */
+    border: none;
+    color: var(--green-medium); /* Texto verde */
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: var(--green-medium-dark);
+    color: white; /* Texto blanco al hacer hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección Hero */
+.hero {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    color: var(--green-medium-dark);
+}
+
+.hero strong {
+    color: var(--green-medium);
+}
+
+/* Títulos de contenedores */
+.contenedor-title {
+    color: var(--green-medium-dark);
+}
+
+/* Pie de página */
+.footer {
+    background-color: var(--green-medium-dark);
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 60px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Más espacio entre icono y texto */
+    font-weight: bold;
+    font-size: 22px; /* Un poco más grande */
+    color: #fff; /* Logo en blanco para contraste */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil en el texto del logo */
+}
+
+.logo i {
+    font-size: 24px; /* Icono un poco más grande */
+}
+
+.menu {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos del menú */
+}
+
+.menu a {
+    margin: 0 18px; /* Más espacio entre enlaces */
+    text-decoration: none;
+    color: #333; /* Enlaces en color oscuro */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.menu a:hover {
+    color: #00cc00; /* Cambio de color al pasar el ratón */
+}
+
+.button {
+    background-color: #ccfac5;
+    border: none; /* Quitar borde negro para un look más limpio */
+    color: white;
+    padding: 12px 20px; /* Más relleno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px; /* Más margen */
+    cursor: pointer;
+    border-radius: 10px; /* Bordes más redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para hover y click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.button:hover {
+    background-color: #6CC96C;
+    transform: translateY(-2px); /* Ligeramente hacia arriba al pasar el ratón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #e0fae0; /* Un verde más claro y suave */
+    color: #333; /* Texto en color oscuro para contraste */
+    padding: 100px 10%; /* Más espacio vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+}
+
+.hero-left {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding-right: 20px;
+}
+
+.hero-right {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding-left: 20px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 52px; /* Título más grande */
+    margin-bottom: 20px; /* Más espacio debajo del título */
+    color: #2e8b57; /* Un tono de verde más intenso para el título */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hero strong {
+    color: #00cc00; /* Resaltar el nombre */
+}
+
+.hero p {
+    font-size: 18px; /* Texto más grande */
+    max-width: 450px; /* Un poco más ancho */
+    line-height: 1.7; /* Mejor espaciado entre líneas */
+    color: #555;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 25px; /* Más espacio arriba del botón */
+    padding: 14px 24px; /* Botón "Saber más" más grande */
+    background-color: #00cc00;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero a:hover {
+    background-color: #00a300; /* Tono más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección de tabla (tablee) - ¡Aclaración importante! */
+.tablee {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde más ligero */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 80%; /* Ancho máximo */
+    text-align: center;
+}
+
+.tablee h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tablee table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Colapsar los bordes de las celdas */
+    margin-top: 10px;
+}
+
+.tablee li { /* Los elementos de lista dentro de la tabla no son semánticamente correctos */
+    /* Considera usar una estructura de tabla adecuada (<table>, <thead>, <tbody>, <tr>, <th>, <td>) */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    list-style: none; /* Quitar los puntos de la lista */
+}
+
+.tablee li:last-child {
+    border-bottom: none; /* Quitar el borde inferior del último elemento */
+}
+
+/* Sección de menú (Visión, Misión, etc.) */
+.menu { /* Reutilizando la clase 'menu' para esta sección, ¡cuidado con la confusión! */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas fijas */
+    grid-template-rows: repeat(2, auto); /* Dos filas fijas */
+    gap: 30px;
+    width: 90%; /* Un poco más ancho */
+    margin: 60px auto; /* Más espacio arriba y abajo */
+    align-items: stretch; /* Asegura que los elementos tengan la misma altura */
+}
+
+.contenedor {
+    background: #fff;
+    border-radius: 12px; /* Bordes más redondeados */
+    padding: 30px; /* Más espacio interior */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más notable pero suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee; /* Borde sutil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor:hover {
+    transform: translateY(-5px); /* Ligeramente hacia arriba al pasar el ratón */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al hacer hover */
+}
+
+.contenedor-title {
+    font-size: 24px; /* Título más grande */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2e8b57; /* Tono de verde para los títulos */
+}
+
+.contenedor-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #6ed26e;
+    color: white;
+    text-align: center;
+    padding: 25px 10px; /* Más espacio vertical */
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 60px; /* Más espacio arriba */
+    border-radius: 12px 12px 0 0; /* Bordes superiores redondeados */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra superior sutil */
+}
+
+.footer p {
+    margin: 8px 0; /* Espacio entre los párrafos */
+}
+
+.footer-social-icons {
+    margin-top: 15px;
+}
+
+.footer-social-icons a {
+    color: white;
+    margin: 0 15px;
+    font-size: 22px; /* Iconos más grandes */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #333; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Ligeramente más grande al hacer hover */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo i {
+        font-size: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .button {
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 60px 10%;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .menu { /* La sección de Visión, Misión, etc. */
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .contenedor {
+        padding: 20px;
+    }
+
+    .contenedor-title {
+        font-size: 20px;
+    }
+
+    .contenedor-text {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+    
+    .footer-social-icons a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+
+}
+/* === Carnet Digital (Demo) === */
+.carnet-container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+.carnet-title { font-size: 1.8rem; margin-bottom: 1rem; }
+
+.id-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+}
+
+.id-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(120deg, #2E7D32, #4CAF50);
+    color: #fff;
+    padding: 1rem 1.25rem;
+}
+.id-card__logo {
+    width: 56px; height: 56px; object-fit: contain; background: #fff; border-radius: 12px; padding: .25rem;
+}
+.id-card__entidad h3 { margin: 0; font-size: 1.25rem; }
+.id-card__entidad p { margin: 0; font-size: .9rem; opacity: .9; }
+
+.id-card__body {
+    display: grid;
+    grid-template-columns: 220px 1fr 200px;
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.id-card__foto {
+    display: grid;
+    place-items: center;
+    gap: .5rem;
+}
+.id-card__foto img {
+    width: 180px; height: 220px; object-fit: cover;
+    border-radius: 12px; border: 4px solid #e8f5e9;
+    box-shadow: 0 6px 14px rgba(76,175,80,.25);
+}
+.id-card__rol {
+    font-size: .85rem;
+    padding: .25rem .6rem;
+    border-radius: 999px;
+    background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9;
+}
+
+.id-card__info {
+    display: grid; align-content: start; gap: .6rem;
+}
+.id-row { display: grid; grid-template-columns: 140px 1fr; gap: .5rem; align-items: center; }
+.id-label { font-size: .85rem; color: #2e7d32; font-weight: 600; }
+.id-value { font-size: .98rem; color: #333; }
+
+.id-card__codes {
+    display: grid; gap: .5rem; align-content: start; justify-items: center;
+}
+.qr {
+    width: 120px; height: 120px; background: repeating-linear-gradient(45deg,#111 0 6px,#fff 6px 12px);
+    display: grid; place-items: center; color: #fff; font-weight: 700; letter-spacing: 2px; user-select: none;
+}
+.barcode {
+    width: 160px; height: 48px; display: flex; gap: 3px; align-items: center; justify-content: center;
+}
+.barcode div { height: 100%; background: #111; width: 3px; }
+.id-code { font-size: .8rem; color: #666; }
+
+.id-card__footer {
+    display: flex; gap: .5rem; padding: .8rem; border-top: 1px solid #eee; justify-content: flex-end;
+    background: #fafafa;
+}
+.btn-id {
+    padding: .5rem .8rem; border-radius: 10px; border: 1px solid #c8e6c9; background: #e8f5e9; color: #2e7d32;
+    cursor: pointer; transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-id:hover { transform: translateY(-1px); box-shadow: 0 6px 12px rgba(46,125,50,.18); }
+
+/* --- Responsivo --- */
+@media (max-width: 900px) {
+    .id-card__body { grid-template-columns: 1fr; }
+    .id-card__foto img { width: 140px; height: 170px; }
+    .id-row { grid-template-columns: 120px 1fr; }
+    .id-card__codes { grid-auto-flow: column; justify-content: start; }
+}
+@media (max-width: 520px) {
+    .id-card__codes { grid-auto-flow: row; justify-items: start; }
+}
